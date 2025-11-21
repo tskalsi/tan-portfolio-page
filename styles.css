@@ -132,7 +132,7 @@ hr.type_1 {
 /* From: https://codepen.io/francoiscoron/pen/wvZLaQP */
 :root {
 	--color-dark: #110d1a;
-	--color-primary: #4E73A8;
+	--color-primary: #67b1d3;
 	accent-color: var(--color-primary);
 }
 
@@ -239,7 +239,7 @@ hr.type_1 {
   margin-top: 0.75rem;
   display: none;
   font-size: 0.95rem;
-  color: #444;
+  color: #000000;
 }
 
 .skill-item.active .skill-description {
