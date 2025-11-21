@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tanveer's Portfolio Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom styles -->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+    rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold me-auto" href="#">
+          <span class="brand-letter">ਤ</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible menu -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#mission-section">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-section">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <video poster="images/WW_win95_v004_dark_wide_post.png" class="hero-video" autoplay loop muted playsinline>
+        <source src="videos/your-video.webm" type="video/webm">
+        <source src="videos/your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <div>
+        <img src="https://vgraphs.com/images/agents/jett-avatar.jpg" alt="Profile Picture" class="profile-img" />
+        <h2 class="hero-title">Tanveer Kalsi</h2>
+        <p class="hero-subtitle">
+          Aspiring UX/UI Designer, amongst other things
+        </p>
+      </div>
+    </section>
+
+    <!-- Bio/mission section -->
+    <section id="bio-section" class="py-5">
+      <hr class="type_1">
+      <div class="container">
+        <h2 class="text-center mb-4">Who I Am</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img
+              src="https://64.media.tumblr.com/28a45ff125b284486622fbbec51906e6/a72fba95ca2bcd0d-75/s540x810/5746c4338ec5df138731d5648dca7fa6216842af.gifv"
+              alt="Mission Image"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="text-center">
+              Hi! I'm Tanveer Kalsi, a computer science major at Michigan State University. I have experience in UX Design, Python, Java, Javascript, C++, HTML, CSS, and more, and am improving each and every day. My mission? To use my skills to improve the lives of different communities. My creative mind is a perfect fit to create great designs and programs. I hope you consider me a good candidate to work with!
+            </p>
+          </div>
+        </div>
+      </div>
+    <hr class="type_1">
+
+      <!-- resume Subsection -->
+      <section id="resume-section" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">My Resume</h2>
+          <div class="d-flex justify-content-center">
+            <a href="Tanveer_Kalsi_Resume.docx" download class="c-btn">
+              <span class="c-btn__label">
+                Download 
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.50005 1.04999C7.74858 1.04999 7.95005 1.25146 7.95005 1.49999V8.41359L10.1819 6.18179C10.3576 6.00605 10.6425 6.00605 10.8182 6.18179C10.994 6.35753 10.994 6.64245 10.8182 6.81819L7.81825 9.81819C7.64251 9.99392 7.35759 9.99392 7.18185 9.81819L4.18185 6.81819C4.00611 6.64245 4.00611 6.35753 4.18185 6.18179C4.35759 6.00605 4.64251 6.00605 4.81825 6.18179L7.05005 8.41359V1.49999C7.05005 1.25146 7.25152 1.04999 7.50005 1.04999ZM2.5 10C2.77614 10 3 10.2239 3 10.5V12C3 12.5539 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2239 12.2239 10 12.5 10C12.7761 10 13 10.2239 13 10.5V12C13 13.1041 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2239 2.22386 10 2.5 10Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Credentials Subsubsection -->
+        <section id="cred-section" class="py-5">
+          <div class="container">
+            <h2 class="text-center mb-4">Credentials</h2>
+            <div class="row align-items-center">
+                <p class="text-center">
+                  Use my skills in user experience and programming to improve the lives of different communities.  
+                </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- Skills section -->
+    <hr class="type_1">
+    <section id="skills-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">My Skills</h2>
+        <ul class="skills-list">
+          <li class="skill-item" onclick="toggleSkill(this)">
+            <div class="skill-title">
+              <span class="arrow">›</span> User Experience Design
+            </div>
+            <div class="skill-description">
+              Took Google's UX Design Course in high school and learned all about the design process, from researching, to designing, prototyping, and testing.
+            </div>
+          </li>
+          <li class="skill-item" onclick="toggleSkill(this)">
+            <div class="skill-title">
+              <span class="arrow">›</span> Object Oriented Programming
+            </div>
+            <div class="skill-description">
+              Knowledgeable in programming in Python, C++, Java, Javascript, HTML, and CSS.
+            </div>
+          </li>
+          <li class="skill-item" onclick="toggleSkill(this)">
+            <div class="skill-title">
+              <span class="arrow">›</span> Teamwork coordination, communication, and organization
+            </div>
+            <div class="skill-description">
+              Proficient in working with others, both synchronously and asynchronously. 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr class="type_1">
+    
+    <!-- portfolio section -->
+    <section id="portfolio-section" class="py-5 text-black text-center">
+      <div class="container-fluid">
+        <h2 class="mb-5 section-title">Portfolio & Projects</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <a href="https://cef5a925-c5e1-4085-b2a7-e71b25adc6ff.filesusr.com/ugd/c0a4e9_46c1af3775454432b3eb5ea5c3f4010f.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="images/app1.png" class="img-fluid mx-auto d-block portfolio-img" alt="Arcade Leaderboard App">
+            </a>
+            <h5 class="mt-3">ARCADE LEADERBOARD APP</h5>
+            <p>Designed a responsive app for arcade gamers and owners, allowing them to share scores, reviews of games, tips, tricks, and leaderboards on the go</p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://cef5a925-c5e1-4085-b2a7-e71b25adc6ff.filesusr.com/ugd/c0a4e9_c06db7a4496b43edaa80faf41841d6b2.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="images/web1.png" class="img-fluid mx-auto d-block portfolio-img" alt="Arcade Leaderboard Website">
+            </a>
+            <h5 class="mt-3">ARCADE LEADERBOARD WEBSITE</h5>
+            <p>Alike to the arcade leaderboard app, but now with a responsive website implementation</p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://cef5a925-c5e1-4085-b2a7-e71b25adc6ff.filesusr.com/ugd/c0a4e9_7dda388126894253b1ca35c074009bb3.pdf" target="_blank" rel="noopener noreferrer">
+              <img src="images/web2.png" class="img-fluid mx-auto d-block portfolio-img" alt="Teen Public Speaking App">
+            </a>
+            <h5 class="mt-3">TEEN PUBLIC SPEAKING APP</h5>
+            <p>Designed both an app and responsive website implementation with detailed tips, explanations, and coaching for teenagers needing help in public speaking</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://tskalsi.github.io/tan-portfolio/" target="_blank" rel="noopener noreferrer">
+              <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/02/new-retro-arcade-vr-screenshot.jpg" class="d-block w-100" alt="Project 1">
+              <div class="carousel-caption">
+                <h5>Jett's Bio Website Page</h5>
+                <p>Designed a bio page for VALORANT's Jett</p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <!-- insert link here when ready -->
+              <img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/2952119e-e33e-4784-9fe5-15399ed24e95.jpg" class="d-block w-100" alt="Project 2">
+              <div class="carousel-caption">
+                <h5>MSU HEMA Website (in progress)</h5>
+                <p>Designing a social and instructionary website for Michigan State University's Renaissance Sword Society</p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <!-- insert link here when ready -->
+              <img src="https://singingmachine.com/cdn/shop/articles/stage-fright.jpg?v=1507525631&width=1000" class="d-block w-100" alt="Project 3">
+              <div class="carousel-caption">
+                <h5> Dungeons & Dragons style video game (in progress) </h5>
+                <p>Developing a D&D styled game using Python</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <!-- Contact Subsection -->
+      <section id="contact-section" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Contact</h2>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 text-center mb-3">
+              <a href="#" class="contact-icon">
+                <i class="bi bi-envelope-fill" style="font-size: 2.5rem;"></i>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-3">
+              <a href="#" class="contact-icon">
+                <i class="bi bi-twitter" style="font-size: 2.5rem;"></i>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-3">
+              <a href="#" class="contact-icon">
+                <i class="bi bi-linkedin" style="font-size: 2.5rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer section -->
+    <br>
+    <section id="footer-section">
+      <footer class="footer">Tanveer Kalsi 2025</footer>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // say when navbar is being scrolled or not
+      function updateNavbar() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+           navbar.classList.remove('scrolled');
+        }
+      }
+      window.addEventListener('scroll', updateNavbar);
+      document.addEventListener('DOMContentLoaded', updateNavbar);
+
+      // for showing active opened state skill list
+      function toggleSkill(element) {
+        element.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>

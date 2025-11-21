@@ -1,0 +1,342 @@
+/* Basic navbar styling */
+.navbar {
+  background-color: transparent;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+/* Default navbar text color (dark gray for transparent state) */
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: 800;
+  transition: color 0.3s;
+}
+
+.navbar .brand-letter {
+  color: white;
+}
+
+/* Hover effect for navbar links */
+.navbar .navbar-nav .nav-link:hover {
+  color: #47eadc;
+}
+
+/* Scrolled navbar styling - all changes bundled here */
+.navbar.scrolled {
+  background-color: rgba(33, 37, 41, 0.9);
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Text color changes when scrolled 
+.navbar.scrolled .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.scrolled .brand-letter {
+  color: white;
+}
+*/
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Text styling */
+.hero-title {
+  font-family: "Indie Flower", serif;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.848), 0 0 30px rgba(255, 255, 255, 0.6);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 15px; 
+  color: #47eadc;
+  /* Simulate an outline by applying shadows on multiple sides */
+  text-shadow: 
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000;
+}
+
+.hero-subtitle {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  text-shadow: 
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000;
+} 
+
+#bio-section {
+  background: url("images/WW_win95_v004_dark_wide_post.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+hr.type_1 {
+border: 0;
+height: 75px;
+margin: 2em auto;
+background-image: url("images/vecteezy_border.png"); /* from here: https://www.vecteezy.com/png/44771235-vintage-filigree-border-element-ornate-ornament-border-divider-decorative-line-for-page-template-poster-greeting-card-wedding-invitation-menu-certificate */
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
+
+/* Mission section: white at the top, transitioning to blue at the bottom */
+#resume-section {
+  color: white;
+  font-weight: bold;
+  text-shadow: 
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000;
+}
+
+
+/* For the button */
+/* From: https://codepen.io/francoiscoron/pen/wvZLaQP */
+:root {
+	--color-dark: #110d1a;
+	--color-primary: #4E73A8;
+	accent-color: var(--color-primary);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.c-btn {
+	position: relative;
+	overflow: hidden;
+	padding: 0.85rem 2rem;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--color-primary);
+	text-decoration: none;
+
+	border-radius: 8px;
+	background-color: transparent;
+	backface-visibility: hidden;
+	box-shadow: inset 0 0 0 1px var(--color-primary);
+
+	transform: translateZ(0);
+
+	&::after {
+		content: "";
+		pointer-events: none;
+		position: absolute;
+
+		top: 0;
+		left: 0;
+		z-index: 1;
+		height: 120%;
+		width: 120%;
+
+		border-radius: 20%;
+		background-color: var(--color-primary);
+		scale: 0 0;
+		translate: 0 140%;
+		transition: scale 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+			translate 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+}
+
+.c-btn__label {
+	display: inline-flex;
+	align-items: center;
+	gap: 1rem;
+
+	z-index: 2;
+	font-size: 1.2rem;
+	letter-spacing: 0.025em;
+
+	transition: color 0.32s ease-in-out;
+}
+
+.c-btn:hover {
+	span {
+		color: var(--color-dark);
+	}
+
+	&:after {
+		scale: 1.5 1.5;
+		translate: 0 0;
+
+		border-radius: 50%;
+	}
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.skill-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skill-title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-description {
+  margin-top: 0.75rem;
+  display: none;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.skill-item.active .skill-description {
+  display: block;
+}
+
+.skill-item .arrow {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.skill-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+
+/* Footer styling */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0f1b20;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* portfolio section */
+#portfolio-section {
+  background: url('images/Abstract\ Dreamscapes\ \(10\).png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 60px 0;
+}
+
+.portfolio-img {
+  border: 3px solid transparent; /* Add base border */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-img:hover {
+  border-color: black; /* Make border visible */
+  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Carousel hover text */
+.carousel-caption {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+}
+
+/* Setting the carousel items */
+.carousel-item {
+  height: 325px;
+  position: relative;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* For the contact */
+.contact-icon {
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #2ecee0; /* New color on hover */
+}
