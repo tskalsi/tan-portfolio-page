@@ -101,23 +101,22 @@
 } 
 
 #bio-section {
-  background: url("images/WW_win95_v004_dark_wide_post.png");
-  background-position: center;
+  background: url("images/pink-to-purp.png");
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 hr.type_1 {
-border: 0;
-height: 75px;
-margin: 2em auto;
-background-image: url("images/vecteezy_border.png"); /* from here: https://www.vecteezy.com/png/44771235-vintage-filigree-border-element-ornate-ornament-border-divider-decorative-line-for-page-template-poster-greeting-card-wedding-invitation-menu-certificate */
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
+  border: 0;
+  height: 75px;
+  margin: 2em auto;
+  background-image: url("images/vecteezy_border.png"); /* from here: https://www.vecteezy.com/png/44771235-vintage-filigree-border-element-ornate-ornament-border-divider-decorative-line-for-page-template-poster-greeting-card-wedding-invitation-menu-certificate */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-/* Mission section: white at the top, transitioning to blue at the bottom */
 #resume-section {
   color: white;
   font-weight: bold;
@@ -205,6 +204,12 @@ background-position: center;
 
 		border-radius: 50%;
 	}
+}
+
+#skills-section {
+  background: url("images/orig3.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .skills-list {

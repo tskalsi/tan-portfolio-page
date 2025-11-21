@@ -74,7 +74,7 @@
 
     <!-- Hero section -->
     <section class="hero">
-      <video poster="images/WW_win95_v004_dark_wide_post.png" class="hero-video" autoplay loop muted playsinline>
+      <video poster="images/orig.png" class="hero-video" autoplay loop muted playsinline>
         <source src="videos/your-video.webm" type="video/webm">
         <source src="videos/your-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -130,10 +130,32 @@
         <section id="cred-section" class="py-5">
           <div class="container">
             <h2 class="text-center mb-4">Credentials</h2>
-            <div class="row align-items-center">
-                <p class="text-center">
-                  Use my skills in user experience and programming to improve the lives of different communities.  
-                </p>
+        
+            <!-- flex-column on mobile, flex-row on md+ -->
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+        
+              <!-- Button 1 -->
+              <a href="https://www.credly.com/badges/95df9ab1-ed27-4fb4-90e5-6bb7236f6f9e/public_url" class="c-btn">
+                <span class="c-btn__label">
+                  Google UX Certificate
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11H4V4H7V3H4C3.44772 3 3 3.44772 3 4V11C3 11.5523 3.44772 12 4 12H11C11.5523 12 12 11.5523 12 11V8H11V11Z" fill="currentColor"/>
+                    <path d="M12 3H9V4H10.2929L6.14645 8.14645L6.85355 8.85355L11 4.70711V6H12V3Z" fill="currentColor"/>
+                  </svg>
+                  
+                </span>
+              </a>
+        
+              <!-- Button 2 -->
+              <a href="https://www.credential.net/profile/tanveerkalsi816512/wallet" class="c-btn">
+                <span class="c-btn__label">
+                  HTML/CSS Certificates
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11H4V4H7V3H4C3.44772 3 3 3.44772 3 4V11C3 11.5523 3.44772 12 4 12H11C11.5523 12 12 11.5523 12 11V8H11V11Z" fill="currentColor"/>
+                    <path d="M12 3H9V4H10.2929L6.14645 8.14645L6.85355 8.85355L11 4.70711V6H12V3Z" fill="currentColor"/>
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </section>
@@ -141,7 +163,6 @@
     </section>
 
     <!-- Skills section -->
-    <hr class="type_1">
     <section id="skills-section" class="py-5">
       <div class="container">
         <h2 class="text-center mb-4">My Skills</h2>
@@ -173,7 +194,6 @@
         </ul>
       </div>
     </section>
-    <hr class="type_1">
     
     <!-- portfolio section -->
     <section id="portfolio-section" class="py-5 text-black text-center">
